@@ -29,7 +29,7 @@ Before proceeding with the steps outlined in this SOP, ensure the following prer
 - **Network:** 192.168.100.1/24
 - **Domain Controller (DC-01):** 192.168.100.2  
 - **DNS:** 192.168.100.2  
-- **DHCP Range:** 192.168.0.21 – 192.168.100.254  
+- **DHCP Range:** 192.168.100.21 – 192.168.100.254  
 - **Reserved Range:** 192.168.100.3 – 192.168.100.20
 
 ## Repository Contents
