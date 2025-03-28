@@ -93,8 +93,8 @@ This SOP covers the complete process of installing and configuring Windows Serve
 8. (Features) click **Next**
 9. (AD DS) click **Next**
 10. (Confirmation) click **Install**
-![AD DS Install](images/8.png)
-11. Wait for the install to complete and **Close**
+    ![AD DS Install](images/8.png)
+12. Wait for the install to complete and **Close**
 
 ### Step 4: Promote to Domain Controller
 1. In Server Manager, click the yellow flag > **Promote this server to a domain controller**
