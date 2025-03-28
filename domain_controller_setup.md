@@ -131,7 +131,7 @@ This SOP covers the complete process of installing and configuring Windows Serve
    - Enter **'192.168.0.2'** for Host IP Address and click **OK**
    - ![Host IP Address](images/18.png)
 6. (Optional) Verifiy DNS
-   - Start > Type 'CMD' > Nslookup
+   - Start > type 'cmd', press Enter, then type 'nslookup' and hit Enter
    - ![Host IP Address](images/19.png)
 
 ### Step 6: Install DHCP Role
