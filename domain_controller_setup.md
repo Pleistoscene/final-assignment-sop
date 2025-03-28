@@ -142,15 +142,19 @@ This SOP covers the complete process of installing and configuring Windows Serve
 4. (Installation Type) Select **Role-based or feature-based installation** and click **Next**
 5. (Server Selection) Choose the local server(DC-01) and click **Next**
 6. (Server Roles) Select **DHCP Server** and click **Next**
-7. (Features) Click **Next**
-8. (DHCP Server) Click **Next**
-9. (Confirmation) Click **Install**, Close once comeplete
+   - ![Add Roles and Features](images/20.png)
+8. (Features) Click **Next**
+9. (DHCP Server) Click **Next**
+10. (Confirmation) Click **Install**, Close once comeplete
+    - ![Add Roles and Features](images/21.png)
 
 ### Step 7: Authorize Server
 1. In Server Manager, click the yellow flag > **Complete DHCP Configuration**
-2. (Description) Click **Next**
-3. (Authorization) Leave default and click **Commit**
-4. (Summary) Click **Close**
+   - ![DHCP Configuration](images/22.png)
+3. (Description) Click **Next**
+4. (Authorization) Leave default and click **Commit**
+   - ![DHCP Commit](images/23.png)
+6. (Summary) Click **Close**
 
 ### Step 8: Configure DHCP Scope
 1. Go to **Server Manager > Tools > DHCP**
