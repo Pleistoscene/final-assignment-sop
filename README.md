@@ -20,7 +20,7 @@ This project demonstrates how to:
 
 ## Repository Contents
 - `domain_controller_setup.md`: Full SOP document
-- `screenshots/`: Visual documentation (to be added)
+- `images/`: Visual documentation (to be added)
 - `README.md`: This file
 
 ## How to Use
