@@ -69,7 +69,7 @@ This SOP covers the complete setup of an on-premises domain controller running W
    - ![Server Manager](images/3.png)
    - Click the **Change** button
    - ![Change Name](images/4.png)
-   - Enter the hostname 'DC-01' and click **OK**
+   - Enter the hostname `DC-01` and click **OK**
    - Restart the server when prompted to apply the change
 
 ### Step 2: Configure Static IP Address
@@ -120,20 +120,20 @@ This SOP covers the complete setup of an on-premises domain controller running W
 4. Create a **Reverse Lookup Zone** for `192.168.100.x`
    - **Right-Click** Reverse Lookup Zone > New Zone
    - ![Reverse Lookup Click](images/15.png)
-   - **Choose** Primary Zone, Check "Store the zone in..." and Click **Next**
+   - **Choose** Primary Zone, Check "`Store the zone in...`" and Click **Next**
    - Click **Next**
    - IPv4 Reverse Lookup Zone and Click **Next**
-   - Network ID: Enter **'192.168.100.2'** and Click **Next**
+   - Network ID: Enter '192.168.100.2' and Click **Next**
    - **Choose** Allow only secure dynamic updates(recomended for Active Directory) and click **Next**
      ![Reverse Lookup](images/16.png)
    - Click **Finish**
-5. Add a PTR(Pointer Record) in Reverse Lookup Zone for '192.168.100.x'
+5. Add a PTR(Pointer Record) in Reverse Lookup Zone for `192.168.100.x`
    - **Right-Click** the Reverse Lookup Zone > New Pointer(PTR)
    - ![Add PTR](images/17.png)
-   - Enter **'192.168.0.2'** for Host IP Address and click **OK**
+   - Enter `192.168.100.2` for Host IP Address and click **OK**
    - ![Host IP Address](images/18.png)
 6. (Optional) Verifiy DNS
-   - Start > type 'cmd', press Enter, then type 'nslookup' and hit Enter
+   - Start > type `cmd`, press Enter, then type `nslookup` and hit Enter
    - ![Host IP Address](images/19.png)
 
 ### Step 6: Install DHCP Role
