@@ -27,6 +27,7 @@ Before proceeding with the steps outlined in this SOP, ensure the following prer
 ## Domain Details
 - **Domain Name:** NSA.local  
 - **Network:** 192.168.100.0/24
+- **Default Gateway:** 192.168.100.1
 - **Domain Controller (DC-01):** 192.168.100.2
 - **DNS:** 192.168.100.2
 - **Reserved Static Range (Servers):** 192.168.100.3 – 192.168.100.20
