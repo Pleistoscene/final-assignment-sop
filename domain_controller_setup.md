@@ -4,7 +4,7 @@
 **College:** Manitoba Institute of Trades and Technology (MITT)  
 **Course:** Network and System Administration  
 **Version:** 1.1
-**Written By:** Aaron Queskekapow, Ravneet Kaur, Harpreet Singh, Jaskirat Kaur Brar <br />
+**Written By:** Aaron Queskekapow, Ravneet Kaur, Harpreet Singh, Jaskirat Kaur Brar
 **Date:** 03/27/2025  
 
 ## Approval
