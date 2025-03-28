@@ -123,7 +123,7 @@ This SOP covers the complete setup of an on-premises domain controller running W
    - **Choose** Primary Zone, Check "`Store the zone in...`" and Click **Next**
    - Click **Next**
    - IPv4 Reverse Lookup Zone and Click **Next**
-   - Network ID: Enter '192.168.100.2' and Click **Next**
+   - Network ID: Enter `192.168.100.2` and Click **Next**
    - **Choose** Allow only secure dynamic updates(recomended for Active Directory) and click **Next**
      ![Reverse Lookup](images/16.png)
    - Click **Finish**
