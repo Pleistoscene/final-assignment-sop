@@ -13,7 +13,7 @@
 |-------------------|----------|----------------|
 | Aaron Queskekapow | Approver | 03/27/2025     |
 
-## Reversion
+## Revision
 
 This SOP has a revision history to keep track of any changes made over time. If anything needs to be updated later, it'll be added to the table below. If a change causes problems or doesn’t work out, we can go back to an earlier version with approval.
 
