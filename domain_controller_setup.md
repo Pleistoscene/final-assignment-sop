@@ -132,7 +132,7 @@ This SOP covers the complete process of installing and configuring Windows Serve
    - ![Host IP Address](images/18.png)
 6. (Optional) Verifiy DNS
    - Start > Type 'CMD' > Nslookup
-   - ![Host IP Address](images/18.png)
+   - ![Host IP Address](images/19.png)
 
 ### Step 6: Install DHCP Role
 1. In **Server Manager**, click **Manage > Add Roles and Features**
