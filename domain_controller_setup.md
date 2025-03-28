@@ -67,7 +67,7 @@ This SOP covers the complete process of installing and configuring Windows Serve
    - ![Server Manager](images/3.png)
    - Click the **Change** button
    - ![Change Name](images/4.png)
-   - Enter the hostname dc-01 and click **OK**
+   - Enter the hostname "DC-01" and click **OK**
    - Restart the server when prompted to apply the change
 
 ### Step 2: Configure Static IP Address
