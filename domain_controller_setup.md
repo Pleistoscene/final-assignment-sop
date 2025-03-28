@@ -85,7 +85,7 @@ This SOP covers the complete process of installing and configuring Windows Serve
 1. Click **Start > Server Manager**
 2. Click **Manage > Add Roles and Features**
 3. Select **Role-based or feature-based installation**
-4. Choose the local server and click **Next**
+4. Choose the local server(DC-01) and click **Next**
 5. Check **Active Directory Domain Services**
 6. Accept any required features and proceed with the installation
 7. Wait for the install to complete (do not restart yet)
