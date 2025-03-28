@@ -47,8 +47,9 @@ This SOP covers the complete setup of an on-premises domain controller running W
 | **Network Address**| 192.168.100.1/24              | NAT-based local network              |
 | **DC-01**          | 192.168.100.2/24              | Domain Controller and DNS server     |
 | **DNS Server**     | 192.168.100.2                 | Self-assigned DNS                    |
-| **Reserved Range** | 192.168.100.3 – 192.168.100.20  | Reserved for future static servers   |
-| **DHCP Pool**      | 192.168.100.21 – 192.168.100.254| Dynamic IP range for client devices  |
+| **Reserved Range**  | 192.168.100.3 – 192.168.100.20       | Reserved for future static servers    |
+| **DHCP Pool**       | 192.168.100.21 – 192.168.100.200     | Dynamic IP range for client devices   |
+| **Future Reserved** | 192.168.100.201 – 192.168.100.254    | Optional reserved range for future IPs|
 
 ## Step-by-Step Procedure
 
@@ -163,11 +164,11 @@ This SOP covers the complete setup of an on-premises domain controller running W
 4. **Next** > Name: `NSA-DHCP` click **Next**
 5. Set range:
    - Start IP: `192.168.100.21`
-   - End IP: `192.168.100.254`
+   - End IP: `192.168.100.200`
 6. Lease duration: default or adjusted as needed
 7. DHCP options:
-   - Default Router Gateway: `192.168.0.1`
-   - DNS Server: `192.168.0.2`
+   - Default Router Gateway: `192.168.100.1`
+   - DNS Server: `192.168.100.2`
    - Domain Name: `NSA.local`
 8. Skip WINS Server
 9. Yes, activate the scope > **Finish**
