@@ -94,7 +94,7 @@ This SOP covers the complete process of installing and configuring Windows Serve
 10. (AD DS) click **Next**
 11. (Confirmation) click **Install**
     ![AD DS Install](images/8.png)
-12. Wait for the install to complete and **Close**
+13. Wait for the install to complete and **Close**
 
 ### Step 4: Promote to Domain Controller
 1. In Server Manager, click the yellow flag > **Promote this server to a domain controller**
