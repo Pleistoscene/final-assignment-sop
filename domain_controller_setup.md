@@ -128,9 +128,9 @@ This SOP covers the complete process of installing and configuring Windows Serve
 7. Add a PTR(Pointer Record) in Reverse Lookup Zone for '192,168.0.x'
    - Right-Click the **Reverse Lookup Zone** you created
    - **Choose** New Pointer(PTR)
-     ![Add PTR](images/17.png)
+   - ![Add PTR](images/17.png)
    - Enter **'192.168.0.2'** for Host IP Address and click **OK**
-     ![Host IP Address](images/18.png)
+   - ![Host IP Address](images/18.png)
 
 ### Step 6: Install DHCP Role
 1. In **Server Manager**, click **Manage > Add Roles and Features**
