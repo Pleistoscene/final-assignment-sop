@@ -130,6 +130,8 @@ This SOP covers the complete process of installing and configuring Windows Serve
    - ![Add PTR](images/17.png)
    - Enter **'192.168.0.2'** for Host IP Address and click **OK**
    - ![Host IP Address](images/18.png)
+8. (Optional) Verifiy DNS
+   - Start > Type 'CMD' > Nslookup
 
 ### Step 6: Install DHCP Role
 1. In **Server Manager**, click **Manage > Add Roles and Features**
