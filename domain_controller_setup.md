@@ -117,7 +117,7 @@ This SOP covers the complete process of installing and configuring Windows Serve
    - ![Forward Lookup Zones](images/14.png)
 6. Create a **Reverse Lookup Zone** for `192.168.0.x`
    - **Right-Click** Reverse Lookup Zone > New Zone
-     ![Reverse Lookup Click](images/15.png)
+   - ![Reverse Lookup Click](images/15.png)
    - **Choose** Primary Zone, Check "Store the zone in..." and Click **Next**
    - Click **Next**
    - IPv4 Reverse Lookup Zone and Click **Next**
