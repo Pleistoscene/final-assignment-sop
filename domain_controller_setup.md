@@ -76,9 +76,9 @@ This SOP covers the complete process of installing and configuring Windows Serve
    ![IP Edit](images/5.png)
 4. Change to **Manual**, enable **IPv4**, and enter:
    - IP Address: `192.168.0.2`
-   - Subnet Prefix Length: `24`
+   - Subnet Mask: `255.255.255.0`
    - Gateway: `192.168.0.1`
-   - Preferred DNS: `127.0.0.1`
+   - Preferred DNS: `192.168.0.2`
 5. Click **Save** and verify connectivity
 
 ### Step 3: Install AD DS Role
