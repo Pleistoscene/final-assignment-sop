@@ -69,7 +69,7 @@ This SOP covers the complete setup of an on-premises domain controller running W
    - ![Server Manager](images/3.png)
    - Click the **Change** button
    - ![Change Name](images/4.png)
-   - Enter the hostname "DC-01" and click **OK**
+   - Enter the hostname 'DC-01' and click **OK**
    - Restart the server when prompted to apply the change
 
 ### Step 2: Configure Static IP Address
