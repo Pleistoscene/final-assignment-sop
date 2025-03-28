@@ -3,8 +3,8 @@
 
 **College:** Manitoba Institute of Trades and Technology (MITT)  
 **Course:** Network and System Administration  
-**Version:** 1.1
-**Written By:** Aaron Queskekapow, Ravneet Kaur, Harpreet Singh, Jaskirat Kaur Brar
+**Version:** 1.1  
+**Written By:** Aaron Queskekapow, Ravneet Kaur, Harpreet Singh, Jaskirat Kaur Brar  
 **Date:** 03/27/2025  
 
 ## Approval
@@ -46,11 +46,11 @@ This SOP covers the complete setup of an on-premises domain controller running W
 | Component          | IP Address Range            | Description                          |
 |--------------------|-----------------------------|--------------------------------------|
 | **Domain Name**    | NSA.local                   | Active Directory domain name         |
-| **Network Address**| 192.168.0.1/24              | NAT-based local network              |
-| **DC-01**          | 192.168.0.2/24              | Domain Controller and DNS server     |
-| **DNS Server**     | 192.168.0.2                 | Self-assigned DNS                    |
-| **Reserved Range** | 192.168.0.3 – 192.168.0.20  | Reserved for future static servers   |
-| **DHCP Pool**      | 192.168.0.21 – 192.168.0.254| Dynamic IP range for client devices  |
+| **Network Address**| 192.168.100.1/24              | NAT-based local network              |
+| **DC-01**          | 192.168.100.2/24              | Domain Controller and DNS server     |
+| **DNS Server**     | 192.168.100.2                 | Self-assigned DNS                    |
+| **Reserved Range** | 192.168.100.3 – 192.168.100.20  | Reserved for future static servers   |
+| **DHCP Pool**      | 192.168.100.21 – 192.168.100.254| Dynamic IP range for client devices  |
 
 ## Step-by-Step Procedure
 
@@ -77,10 +77,10 @@ This SOP covers the complete setup of an on-premises domain controller running W
 2. Select the connected network, scroll down to **IP assignment**, and click **Edit**
    ![IP Edit](images/5.png)
 4. Change to **Manual**, enable **IPv4**, and enter:
-   - IP Address: `192.168.0.2`
+   - IP Address: `192.168.100.2`
    - Subnet Mask: `255.255.255.0`
-   - Gateway: `192.168.0.1`
-   - Preferred DNS: `192.168.0.2`
+   - Gateway: `192.168.100.1`
+   - Preferred DNS: `192.168.100.2`
 5. Click **Save** and verify connectivity
 
 ### Step 3: Install AD DS Role
@@ -117,17 +117,17 @@ This SOP covers the complete setup of an on-premises domain controller running W
 2. Open **Server Manager > Tools > DNS**
 3. Verify **Forward Lookup Zones** contains `NSA.local`
    - ![Forward Lookup Zones](images/14.png)
-4. Create a **Reverse Lookup Zone** for `192.168.0.x`
+4. Create a **Reverse Lookup Zone** for `192.168.100.x`
    - **Right-Click** Reverse Lookup Zone > New Zone
    - ![Reverse Lookup Click](images/15.png)
    - **Choose** Primary Zone, Check "Store the zone in..." and Click **Next**
    - Click **Next**
    - IPv4 Reverse Lookup Zone and Click **Next**
-   - Network ID: Enter '192.168.0.2.x' and Click **Next**
+   - Network ID: Enter **'192.168.100.2'** and Click **Next**
    - **Choose** Allow only secure dynamic updates(recomended for Active Directory) and click **Next**
      ![Reverse Lookup](images/16.png)
    - Click **Finish**
-5. Add a PTR(Pointer Record) in Reverse Lookup Zone for '192,168.0.x'
+5. Add a PTR(Pointer Record) in Reverse Lookup Zone for '192.168.100.x'
    - **Right-Click** the Reverse Lookup Zone > New Pointer(PTR)
    - ![Add PTR](images/17.png)
    - Enter **'192.168.0.2'** for Host IP Address and click **OK**
@@ -164,8 +164,8 @@ This SOP covers the complete setup of an on-premises domain controller running W
    ![DHCP Scope](images/24.png)
 4. **Next** > Name: `NSA-DHCP` click **Next**
 5. Set range:
-   - Start IP: `192.168.0.21`
-   - End IP: `192.168.0.254`
+   - Start IP: `192.168.100.21`
+   - End IP: `192.168.100.254`
 6. Lease duration: default or adjusted as needed
 7. DHCP options:
    - Default Router Gateway: `192.168.0.1`
