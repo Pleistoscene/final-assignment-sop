@@ -174,6 +174,8 @@ This SOP covers the complete process of installing and configuring Windows Serve
 
 ## Summary and Conclusion
 
+![Summary](images/25.png)
+
 This SOP walked through setting up an on-premises domain controller using Windows Server 2025 with a GUI on real hardware. We configured a static IP address, installed and promoted the server to a domain controller, and set up DNS and DHCP services. Testing confirmed that the domain, name resolution, and IP address assignment worked as expected.
 
 With this setup complete, the network is ready for additional client computers and future infrastructure to join the domain `NSA.local`. This SOP can be reused and updated for future deployments or referenced when expanding the network.
