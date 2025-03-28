@@ -71,71 +71,73 @@ This SOP covers the complete process of installing and configuring Windows Serve
    - Restart the server when prompted to apply the change
 
 ### Step 2: Configure Static IP Address
-1. Go to **Settings > Network & Internet > Ethernet > Change Adapter Options**
-2. Right-click the active network interface > **Properties**
-3. Select **Internet Protocol Version 4 (TCP/IPv4)** > **Properties**
-4. Configure the following:
+1. Click **Start > Settings > Network & Internet > Ethernet**
+2. Select the connected network, scroll down to **IP assignment**, and click **Edit**
+3. Change to **Manual**, enable **IPv4**, and enter:
    - IP Address: `192.168.0.2`
-   - Subnet Mask: `255.255.255.0`
-   - Default Gateway: `192.168.0.1`
-   - Preferred DNS Server: `127.0.0.1`
-5. Click OK and close all windows.
+   - Subnet Prefix Length: `24`
+   - Gateway: `192.168.0.1`
+   - Preferred DNS: `127.0.0.1`
+4. Click **Save** and verify connectivity
 
 ### Step 3: Install AD DS Role
-1. Open **Server Manager**
+1. Click **Start > Server Manager**
 2. Click **Manage > Add Roles and Features**
-3. Choose **Role-based or feature-based installation** > Select local server
-4. Select **Active Directory Domain Services (AD DS)**
-5. Add required features when prompted
-6. Click **Next** through remaining screens, then click **Install**
-7. Wait for installation to complete, but **do not restart yet**
+3. Select **Role-based or feature-based installation**
+4. Choose the local server and click **Next**
+5. Check **Active Directory Domain Services**
+6. Accept any required features and proceed with the installation
+7. Wait for the install to complete (do not restart yet)
 
 ### Step 4: Promote to Domain Controller
-1. In Server Manager, click the notification flag > **Promote this server to a domain controller**
-2. Select **Add a new forest**, enter `NSA.local`
-3. Set Forest and Domain functional levels to **Windows Server 2025**
-4. Set a Directory Services Restore Mode (DSRM) password
-5. Accept defaults for DNS and NetBIOS
-6. Review and click **Install**, then **restart when prompted**
+1. In Server Manager, click the yellow flag > **Promote this server to a domain controller**
+2. Choose **Add a new forest** and enter `NSA.local`
+3. Leave the default NetBIOS name or customize if needed
+4. Set DSRM (Directory Services Restore Mode) password
+5. Continue through the wizard and click **Install**
+6. Restart the system after promotion completes
 
 ### Step 5: Verify Domain and DNS
-1. Log in after reboot using domain admin credentials
+1. Log in as `NSA\Administrator`
 2. Open **Server Manager > Tools > DNS**
-3. Verify that `NSA.local` zone exists under **Forward Lookup Zones**
-4. Optionally, create a reverse lookup zone for `192.168.0.x`
-5. Test DNS with:
-   ```bash
+3. Verify **Forward Lookup Zones** contains `NSA.local`
+4. Optionally create a **Reverse Lookup Zone** for `192.168.0.x`
+5. Test name resolution with:
+   ```powershell
    nslookup nsa.local
    ```
 
 ### Step 6: Install DHCP Role
-1. Open **Server Manager > Manage > Add Roles and Features**
-2. Add **DHCP Server** role
-3. Click **Next** until **Install**, then click **Install**
-4. Once installed, click **Complete DHCP Configuration**
-5. Authorize the DHCP server using the local domain admin credentials
+1. In **Server Manager**, click **Manage > Add Roles and Features**
+2. Select **DHCP Server** and install
+3. Click **Complete DHCP Configuration** after install finishes
+4. Authorize the server when prompted using domain credentials
 
 ### Step 7: Configure DHCP Scope
-1. Open **Server Manager > Tools > DHCP**
-2. Expand IPv4 > Right-click > **New Scope**
+1. Go to **Server Manager > Tools > DHCP**
+2. Expand **IPv4** > right-click > **New Scope**
 3. Name: `NSA-DHCP`
-4. IP Range:
+4. Set range:
    - Start: `192.168.0.21`
    - End: `192.168.0.254`
-5. Add exclusion range: `192.168.0.1 – 192.168.0.20`
-6. Default lease time: leave default or adjust as needed
-7. Configure DHCP options:
+5. Add exclusion: `192.168.0.1 – 192.168.0.20`
+6. Lease duration: default or adjusted as needed
+7. DHCP options:
    - Router: `192.168.0.1`
    - DNS Server: `192.168.0.2`
    - Domain Name: `NSA.local`
 8. Activate the scope
 
 ### Step 8: Testing and Validation
-- Boot a client device and connect it to the network
-- Confirm it receives an IP from the DHCP range
-- Join the domain `NSA.local`
-- Run `ipconfig /all` to verify DNS and gateway
-- Use `nslookup` to test name resolution
+- Connect a client device to the network
+- Confirm it receives an IP from the DHCP pool
+- Attempt to join the domain: `NSA.local`
+- Use `ipconfig /all` to verify IP and DNS settings
+- Run:
+   ```powershell
+   nslookup nsa.local
+   ```
+   to confirm name resolution
 
 ### Step 9: Backup & Documentation
 - Save a screenshot of each step where possible
