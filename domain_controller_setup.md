@@ -25,6 +25,17 @@ This SOP has a revision history to keep track of any changes made over time. If 
 | 1.0     | 03/27/2025 | Initial release of the SOP | Aaron Queskekapow   |
 | 1.1     | 03/28/2025 | Grammar corrections. | Aaron Queskekapow   |
 
+### Accountability Matrix
+
+| Role                     | Name               | Responsibility                                |
+|--------------------------|--------------------|-----------------------------------------------|
+| Domain Administrator     | Aaron Queskekapow  | Set up and configured the domain controller   |
+| Network Technician       | Aaron Queskekapow  | Configured IP settings, NAT, and DHCP         |
+| Client Support           | Ravneet Kaur       | Assisted with client PC setup and domain join |
+| System Verifier          | Jaskirat Kaur Brar | Tested domain login and DNS resolution        |
+| Configuration Assistant  | Harpreet Singh     | Helped validate network configuration steps   |
+| Documentation Lead       | Aaron Queskekapow  | Wrote and structured the SOP                  |
+
 ## Purpose
 
 This SOP is part of our final assignment and demonstrates installing and configuring Windows Server 2025 with Desktop Experience (GUI) as an on-premises domain controller. It shows how to set up core services like Active Directory, DNS, and DHCP on a physical machine to run a domain and manage devices on the network.
