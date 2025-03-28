@@ -65,9 +65,9 @@ This SOP covers the complete process of installing and configuring Windows Serve
    - Click on **Local Server** in the left-hand menu. 
    - Next to **Computer Name**, click the current name (e.g., `WIN-6OG0DUBK8TD`)
    - ![Server Manager](images/3.png)
-   - Click the **Change** button.
-     ![Change Name](images/4.png)
-   - Enter your new hostname and click **OK**
+   - Click the **Change** button
+   - ![Change Name](images/4.png)
+   - Enter the hostname dc-01 and click **OK**
    - Restart the server when prompted to apply the change
 
 ### Step 2: Configure Static IP Address
