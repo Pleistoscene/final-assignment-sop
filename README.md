@@ -25,14 +25,16 @@ Before proceeding with the steps outlined in this SOP, ensure the following prer
   - **Display**: Super VGA (1024 x 768) or higher-resolution monitor
 
 ## Domain Details
-- **Domain Name:** NSA.local  
-- **Network:** 192.168.100.0/24
-- **Default Gateway:** 192.168.100.1
-- **Domain Controller (DC-01):** 192.168.100.2
-- **DNS:** 192.168.100.2
-- **Reserved Static Range (Servers):** 192.168.100.3 – 192.168.100.20
-- **DHCP Range (Clients):** 192.168.100.21 – 192.168.100.200
-- **Optional Reserved Range (Future Static IPs):** 192.168.100.201 – 192.168.100.254
+| Setting                                 | Value                            |
+|-----------------------------------------|----------------------------------|
+| **Domain Name**                         | NSA.local                         |
+| **Network**                             | 192.168.100.0/24                  |
+| **Default Gateway**                     | 192.168.100.1                     |
+| **Domain Controller (DC-01)**           | 192.168.100.2                     |
+| **DNS Server**                          | 192.168.100.2                     |
+| **Reserved Static Range (Servers)**     | 192.168.100.3 – 192.168.100.20    |
+| **DHCP Range (Clients)**                | 192.168.100.21 – 192.168.100.200  |
+| **Optional Reserved Range (Future IPs)**| 192.168.100.201 – 192.168.100.254 |
 
 ## Repository Contents
 - `domain_controller_setup.md`: Full SOP document
