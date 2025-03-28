@@ -12,6 +12,8 @@
 | Name              | Role     | Date Approved |
 |-------------------|----------|----------------|
 | Aaron Queskekapow | Approver | 03/27/2025     |
+|-------------------|----------|----------------|
+| Aaron Queskekapow | Approver | 03/28/2025     |
 
 ## Revision
 
@@ -22,18 +24,20 @@ This SOP has a revision history to keep track of any changes made over time. If 
 | Version | Date       | Description                | Author              |
 |---------|------------|----------------------------|---------------------|
 | 1.0     | 03/27/2025 | Initial release of the SOP | Aaron Queskekapow   |
+|---------|------------|----------------------------|---------------------|
+| 1.1     | 03/28/2025 | Grammer corrections. | Aaron Queskekapow   |
 
 ## Purpose
 
-This SOP is part of our final assignment and demonstrates how to install and configure the Desktop Experience version of Windows Server 2025 (GUI) as a domain controller with DNS and DHCP services.
+This SOP is part of our final assignment and demonstrates installing and configuring Windows Server 2025 with Desktop Experience (GUI) as an on-premises domain controller. It shows how to set up core services like Active Directory, DNS, and DHCP on a physical machine to run a domain and manage devices on the network.
 
 ## Application
 
-This applies to IT administrators or technicians responsible for deploying Windows Server 2025 in an on-premises environment using NAT networking. The steps ensure the system is prepared to support domain-joined client machines.
+This SOP is intended for IT administrators and technicians tasked with deploying Windows Server 2025 in an on-premises environment. It provides clear guidance for setting up a secure and functional domain controller using NAT networking. The steps ensure the system is prepared to support domain joined client machines.
 
 ## Scope
 
-This SOP covers the complete process of installing and configuring Windows Server 2025 with Desktop Experience on a physical machine. It includes setting a static IP, installing roles (Active Directory Domain Services, DNS, and DHCP), promoting the server to a domain controller, and verifying services.
+This SOP covers the complete setup of an on-premises domain controller running Windows Server 2025 with a graphical interface. It includes configuring a static IP address, installing necessary roles and features (AD DS, DNS, DHCP), promoting the server to a domain controller and verifying proper operation of all services.
 
 ## Responsibilities
 
