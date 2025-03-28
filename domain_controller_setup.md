@@ -21,7 +21,7 @@ This SOP has a revision history to keep track of any changes made over time. If 
 | Version | Date       | Description                | Author              |
 |---------|------------|----------------------------|---------------------|
 | 1.0     | 03/27/2025 | Initial release of the SOP | Aaron Queskekapow   |
-| 1.1     | 03/28/2025 | Grammer corrections. | Aaron Queskekapow   |
+| 1.1     | 03/28/2025 | Grammar corrections. | Aaron Queskekapow   |
 
 ## Purpose
 
