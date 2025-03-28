@@ -114,10 +114,17 @@ This SOP covers the complete process of installing and configuring Windows Serve
 2. Open **Server Manager > Tools > DNS**
 3. Verify **Forward Lookup Zones** contains `NSA.local`
 4. Create a **Reverse Lookup Zone** for `192.168.0.x`
-5. Test name resolution with:
-   ```powershell
-   nslookup nsa.local
-   ```
+   - **Right-Click** Reverse Lookup Zone > New Zone
+   - **Choose** Primary Zone, Check "Store the zone in..." and Click **Next**
+   - Click **Next**
+   - IPv4 Reverse Lookup Zone and Click **Next**
+   - Network ID: Enter '192.168.0.2.x' and Click **Next**
+   - **Choose** Allow only secure dynamic updates(recomended for Active Directory) and click **Next**
+   - Click **Finish**
+5. Add a PTR(Pointer Record) in Reverse Lookup Zone for '192,168.0.x'
+   - Right-Click the **Reverse Lookup Zone** you created
+   - **Choose** New Pointer(PTR)
+   - Enter **'192.168.0.2'** for Host IP Address and click **OK**
 
 ### Step 6: Install DHCP Role
 1. In **Server Manager**, click **Manage > Add Roles and Features**
