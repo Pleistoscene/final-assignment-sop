@@ -113,7 +113,7 @@ This SOP covers the complete process of installing and configuring Windows Serve
 1. Log in as `NSA\Administrator`
 2. Open **Server Manager > Tools > DNS**
 3. Verify **Forward Lookup Zones** contains `NSA.local`
-4. Optionally create a **Reverse Lookup Zone** for `192.168.0.x`
+4. Create a **Reverse Lookup Zone** for `192.168.0.x`
 5. Test name resolution with:
    ```powershell
    nslookup nsa.local
