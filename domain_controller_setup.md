@@ -126,8 +126,7 @@ This SOP covers the complete process of installing and configuring Windows Serve
      ![Reverse Lookup](images/16.png)
    - Click **Finish**
 7. Add a PTR(Pointer Record) in Reverse Lookup Zone for '192,168.0.x'
-   - Right-Click the **Reverse Lookup Zone** you created
-   - **Choose** New Pointer(PTR)
+   - **Right-Click** the Reverse Lookup Zone > New Pointer(PTR)
    - ![Add PTR](images/17.png)
    - Enter **'192.168.0.2'** for Host IP Address and click **OK**
    - ![Host IP Address](images/18.png)
