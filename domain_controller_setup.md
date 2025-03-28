@@ -84,25 +84,26 @@ This SOP covers the complete process of installing and configuring Windows Serve
 ### Step 3: Install AD DS Role
 1. Click **Start > Server Manager**
 2. Click **Manage > Add Roles and Features**
-   ![Add Roles and Features](images/6.png)
-4. (Before You Begin) Click **Next**
-5. (Installation Type) Select **Role-based or feature-based installation** and click **Next**
-6. (Server Selection) Choose the local server(DC-01) and click **Next**
-7. (Server Roles) Check **Active Directory Domain Services** and click **Next**
-   ![AD DS](images/7.png)
-8. (Features) click **Next**
-9. (AD DS) click **Next**
-10. (Confirmation) click **Install**
+   - ![Add Roles and Features](images/6.png)
+3. (Before You Begin) Click **Next**
+4. (Installation Type) Select **Role-based or feature-based installation** and click **Next**
+5. (Server Selection) Choose the local server(DC-01) and click **Next**
+6. (Server Roles) Check **Active Directory Domain Services** and click **Next**
+   - ![AD DS](images/7.png)
+7. (Features) click **Next**
+8. (AD DS) click **Next**
+9. (Confirmation) click **Install**
     - ![AD DS Install](images/8.png)
-12. Wait for the install to complete and **Close**
+10. Wait for the install to complete and **Close**
 
 ### Step 4: Promote to Domain Controller
 1. In Server Manager, click the yellow flag > **Promote this server to a domain controller**
-2. Choose **Add a new forest** and enter `NSA.local`
-3. Leave the default NetBIOS name or customize if needed
-4. Set DSRM (Directory Services Restore Mode) password
-5. Continue through the wizard and click **Install**
-6. Restart the system after promotion completes
+   - ![Promote DC](images/9.png)
+3. Choose **Add a new forest** and enter `NSA.local`
+4. Leave the default NetBIOS name or customize if needed
+5. Set DSRM (Directory Services Restore Mode) password
+6. Continue through the wizard and click **Install**
+7. Restart the system after promotion completes
 
 ### Step 5: Verify Domain and DNS
 1. Log in as `NSA\Administrator`
