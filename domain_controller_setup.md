@@ -54,10 +54,12 @@ This SOP covers the complete process of installing and configuring Windows Serve
 
 ### Step 1: Initial Server Setup
 1. Power on the physical server with Windows Server 2025 installation media.
-2. Complete initial setup steps:
-   - ![Initial Setup](images/1.png)
+
+![Initial Setup](images/1.png)
+![Initial Setup](images/2.png)
+
+3. Complete initial setup steps:
    - Choose "Windows Server 2025 Standard (Desktop Experience)"
-   - ![Initial Setup](images/2.png)
    - Set the Administrator password
 4. Log in as Administrator.
 5. Rename the machine to `DC-01`:
