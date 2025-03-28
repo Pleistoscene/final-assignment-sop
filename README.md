@@ -1,30 +1,33 @@
-**Standard Operating Procedure (SOP)**
-**Setting Up an On-Premises Domain Controller**
+# On-Premises Domain Controller Setup
 
-**College:** Manitoba Institute of Trades and Technology(MITT)  
-**Course:** Network and System Administration  
-**Version:** 1.0  
-**Written By:** Aaron Queskekapow , Add your names here
-**Date:** 03/26/2025  
+This repository contains the final assignment SOP and resources for setting up a Windows Server 2025 Domain Controller in an on-premises environment.
 
-## Approval
+## Overview
+This project demonstrates how to:
+- Install Windows Server 2025 with Desktop Experience (GUI)
+- Configure static IP and DNS
+- Install and promote the server to a Domain Controller
+- Set up DNS and DHCP services
+- Test the network setup with a client machine
 
-| Name   | Role     | Date Approved |
-|--------|----------|----------------|
-| Aaron Queskekapow | Approver | 03/26/2025 |
+## Domain Details
+- **Domain Name:** NSA.local  
+- **Network:** 192.168.0.1/24  
+- **Domain Controller (DC-01):** 192.168.0.2  
+- **DNS:** 192.168.0.2  
+- **DHCP Range:** 192.168.0.21 – 192.168.0.254  
+- **Reserved Range:** 192.168.0.3 – 192.168.0.20
 
-## Reversion
+## Repository Contents
+- `domain_controller_setup.md`: Full SOP document
+- `screenshots/`: Visual documentation (to be added)
+- `README.md`: This file
 
-This SOP has a revision history to keep track of any changes made over time. If anything needs to be updated later, it'll be added to the table below. If a change causes problems or doesn’t work out, we can go back to an earlier version with approval.
+## How to Use
+1. Follow the steps outlined in `domain_controller_setup.md`
+2. Use screenshots and logs as evidence for your setup
+3. Push updates and contributions via pull requests (group members)
 
-### Revision History
-
-| Version | Date       | Description                   | Author              |
-|---------|------------|-------------------------------|---------------------|
-| 1.0     | 03/27/2025 | Initial release of the SOP    | Aaron Queskekapow   |
-
-**Purpose**
-This SOP is part of our final assignment and demonstrates how to install and configure the Desktop Experience version of Windows Server 2025 (GUI) as a domain controller with DNS and DHCP services.
-
-**Application**
-This applies to IT administrators or technicians responsible for deploying Windows Server 2025 in an on-premises environment using NAT networking. The steps ensure the system is prepared to support domain-joined client machines.
+## Authors
+- Aaron Queskekapow  
+- *Group members can add their names here once added to the repo*
