@@ -84,14 +84,16 @@ This SOP covers the complete process of installing and configuring Windows Serve
 ### Step 3: Install AD DS Role
 1. Click **Start > Server Manager**
 2. Click **Manage > Add Roles and Features**
-3. (Before You Begin) Click **Next**
-4. (Installation Type) Select **Role-based or feature-based installation** and click **Next**
-5. (Server Selection) Choose the local server(DC-01) and click **Next**
-6. (Server Roles) Check **Active Directory Domain Services** and click **Next**
-7. (Features) click **Next**
-8. (AD DS) click **Next**
-9. (Confirmation) click **Install**
-10. Wait for the install to complete and **Close**
+   ![Add Roles and Features](images/7.png)
+4. (Before You Begin) Click **Next**
+5. (Installation Type) Select **Role-based or feature-based installation** and click **Next**
+6. (Server Selection) Choose the local server(DC-01) and click **Next**
+7. (Server Roles) Check **Active Directory Domain Services** and click **Next**
+8. (Features) click **Next**
+9. (AD DS) click **Next**
+10. (Confirmation) click **Install**
+    ![AD DS Install](images/8.png)
+12. Wait for the install to complete and **Close**
 
 ### Step 4: Promote to Domain Controller
 1. In Server Manager, click the yellow flag > **Promote this server to a domain controller**
