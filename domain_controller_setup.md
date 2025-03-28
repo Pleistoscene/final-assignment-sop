@@ -158,34 +158,22 @@ This SOP covers the complete process of installing and configuring Windows Serve
 
 ### Step 8: Configure DHCP Scope
 1. Go to **Server Manager > Tools > DHCP**
-2. Expand **IPv4** > right-click > **New Scope**
-3. Name: `NSA-DHCP`
+2. Expand **Your Domain** > **IPv4** > right-click > **New Scope**
+3. **Next** > Name: `NSA-DHCP` click **Next**
 4. Set range:
-   - Start: `192.168.0.21`
-   - End: `192.168.0.254`
-5. Add exclusion: `192.168.0.1 – 192.168.0.20`
-6. Lease duration: default or adjusted as needed
-7. DHCP options:
-   - Router: `192.168.0.1`
+   - Start IP: `192.168.0.21`
+   - End IP: `192.168.0.254`
+5. Lease duration: default or adjusted as needed
+6. DHCP options:
+   - Default Router Gateway: `192.168.0.1`
    - DNS Server: `192.168.0.2`
    - Domain Name: `NSA.local`
-8. Activate the scope
+7. Skip WINS Server
+8. Yes, activate the scope > **Finish**
 
-### Step 9: Testing and Validation
-- Connect a client device to the network
-- Confirm it receives an IP from the DHCP pool
-- Attempt to join the domain: `NSA.local`
-- Use `ipconfig /all` to verify IP and DNS settings
-- Run:
-   ```powershell
-   nslookup nsa.local
-   ```
-   to confirm name resolution
+### Completion
 
-### Step 9: Backup & Documentation
-- Save a screenshot of each step where possible
-- Backup DHCP settings using PowerShell (optional)
-- Commit this SOP and evidence to the group GitHub repo
+
 
 ## Summary and Conclusion
 
