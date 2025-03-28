@@ -135,12 +135,24 @@ This SOP covers the complete process of installing and configuring Windows Serve
    - ![Host IP Address](images/19.png)
 
 ### Step 6: Install DHCP Role
-1. In **Server Manager**, click **Manage > Add Roles and Features**
-2. Select **DHCP Server** and install
-3. Click **Complete DHCP Configuration** after install finishes
-4. Authorize the server when prompted using domain credentials
+1. Click **Start > Server Manager**
+2. Click **Manage > Add Roles and Features**
+   - ![Add Roles and Features](images/6.png)
+3. (Before You Begin) Click **Next**
+4. (Installation Type) Select **Role-based or feature-based installation** and click **Next**
+5. (Server Selection) Choose the local server(DC-01) and click **Next**
+6. (Server Roles) Select **DHCP Server** and click **Next**
+7. (Features) Click **Next**
+8. (DHCP Server) Click **Next**
+9. (Confirmation) Click **Install**, Close once comeplete
 
-### Step 7: Configure DHCP Scope
+### Step 7: Authorize Server
+1. In Server Manager, click the yellow flag > **Complete DHCP Configuration**
+2. (Description) Click **Next**
+3. (Authorization) Leave default and click **Commit**
+4. (Summary) Click **Close**
+
+### Step 8: Configure DHCP Scope
 1. Go to **Server Manager > Tools > DHCP**
 2. Expand **IPv4** > right-click > **New Scope**
 3. Name: `NSA-DHCP`
@@ -155,7 +167,7 @@ This SOP covers the complete process of installing and configuring Windows Serve
    - Domain Name: `NSA.local`
 8. Activate the scope
 
-### Step 8: Testing and Validation
+### Step 9: Testing and Validation
 - Connect a client device to the network
 - Confirm it receives an IP from the DHCP pool
 - Attempt to join the domain: `NSA.local`
