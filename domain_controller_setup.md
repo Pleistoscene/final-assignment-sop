@@ -73,12 +73,13 @@ This SOP covers the complete process of installing and configuring Windows Serve
 ### Step 2: Configure Static IP Address
 1. Click **Start > Settings > Network & Internet > Ethernet**
 2. Select the connected network, scroll down to **IP assignment**, and click **Edit**
-3. Change to **Manual**, enable **IPv4**, and enter:
+   ![IP Edit](images/5.png)
+4. Change to **Manual**, enable **IPv4**, and enter:
    - IP Address: `192.168.0.2`
    - Subnet Prefix Length: `24`
    - Gateway: `192.168.0.1`
    - Preferred DNS: `127.0.0.1`
-4. Click **Save** and verify connectivity
+5. Click **Save** and verify connectivity
 
 ### Step 3: Install AD DS Role
 1. Click **Start > Server Manager**
