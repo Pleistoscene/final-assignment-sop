@@ -172,10 +172,6 @@ This SOP covers the complete process of installing and configuring Windows Serve
 8. Skip WINS Server
 9. Yes, activate the scope > **Finish**
 
-### Completion
-
-
-
 ## Summary and Conclusion
 
 This SOP walked through setting up an on-premises domain controller using Windows Server 2025 with a GUI on real hardware. We configured a static IP address, installed and promoted the server to a domain controller, and set up DNS and DHCP services. Testing confirmed that the domain, name resolution, and IP address assignment worked as expected.
