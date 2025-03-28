@@ -61,8 +61,14 @@ This SOP covers the complete process of installing and configuring Windows Serve
      ![Initial Setup](images/2.png)
 3. Log in as Administrator.
 4. Rename the machine to `DC-01`:
-   - Open **Settings > System > About > Rename this PC**
-   - Set to `DC-01`, restart when prompted.
+   - Open **Server Manager**
+   - Click on **Local Server** in the left-hand menu. 
+   - Next to **Computer Name**, click the current name (e.g., `WIN-6OG0DUBK8TD`)
+   - ![Server Manager](images/3.png)
+   - Click the **Change** button.
+     ![Change Name](images/4.png)
+   - Enter your new hostname and click **OK**
+   - Restart the server when prompted to apply the change
 
 ### Step 2: Configure Static IP Address
 1. Go to **Settings > Network & Internet > Ethernet > Change Adapter Options**
