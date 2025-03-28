@@ -1,5 +1,4 @@
-**Standard Operating Procedure (SOP)**  
-**Setting Up an On-Premises Domain Controller**  
+#Setting Up an On-Premises Domain Controller**  
 
 **College:** Manitoba Institute of Trades and Technology (MITT)  
 **Course:** Network and System Administration  
