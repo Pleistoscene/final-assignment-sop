@@ -10,6 +10,20 @@ This project demonstrates how to:
 - Set up DNS and DHCP services
 - Test the network setup with a client machine
 
+## Prerequisites
+Before proceeding with the steps outlined in this SOP, ensure the following prerequisites are met:
+
+- You have access to a physical machine where **Windows Server 2025 with Desktop Experience (GUI)** will be installed.
+- You possess basic knowledge of installing an operating system, including booting from USB, selecting installation options, and completing setup for Windows Server.
+- You have access to the **Windows Server 2025 ISO image**.
+- Your machine meets the **minimum system requirements** for Windows Server 2025 with GUI:
+  - **Processor**: 1.4 GHz 64-bit processor (x64 architecture, supports NX and DEP, CMPXCHG16b, LAHF/SAHF, and PrefetchW)
+  - **RAM**: 4 GB minimum
+  - **Storage**: 64 GB minimum
+  - **Network Adapter**: Ethernet adapter capable of at least 1 Gbps
+  - **UEFI firmware** with Secure Boot capability
+  - **Display**: Super VGA (1024 x 768) or higher-resolution monitor
+
 ## Domain Details
 - **Domain Name:** NSA.local  
 - **Network:** 192.168.0.1/24  
@@ -20,7 +34,7 @@ This project demonstrates how to:
 
 ## Repository Contents
 - `domain_controller_setup.md`: Full SOP document
-- `images/`: Visual documentation (to be added)
+- `images/`: Visual documentation
 - `README.md`: This file
 
 ## How to Use
