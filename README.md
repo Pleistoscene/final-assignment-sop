@@ -44,4 +44,6 @@ Before proceeding with the steps outlined in this SOP, ensure the following prer
 
 ## Authors
 - Aaron Queskekapow  
-- *Group members can add their names here once added to the repo*
+- Ravneet Kaur
+- Jaskirat Kaur Brar
+- Harpreet Singh
