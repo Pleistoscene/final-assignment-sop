@@ -99,11 +99,15 @@ This SOP covers the complete process of installing and configuring Windows Serve
 ### Step 4: Promote to Domain Controller
 1. In Server Manager, click the yellow flag > **Promote this server to a domain controller**
    - ![Promote DC](images/9.png)
-3. Choose **Add a new forest** and enter `NSA.local`
-4. Leave the default NetBIOS name or customize if needed
-5. Set DSRM (Directory Services Restore Mode) password
-6. Continue through the wizard and click **Install**
-7. Restart the system after promotion completes
+2. (Deployment Configuration) Choose **Add a new forest**, enter `NSA.local` and click **Next**
+   - ![Add Forest](images/10.png)
+3. (Domain Controller Options) Enter DSRM (Directory Services Restore Mode) password and click **Next**
+   - ![Domain Password](images/11.png)
+4. (Deployment Configuration - DNS Options) Click **Next**
+5. (Additional Options) Leave the default NetBIOS name or customize if needed
+6. Continue through the wizard and click **Install** after prerequisites check
+    - ![Domain Password](images/12.png)
+7. After promotion completes let it restart
 
 ### Step 5: Verify Domain and DNS
 1. Log in as `NSA\Administrator`
