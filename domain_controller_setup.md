@@ -140,52 +140,52 @@ This SOP covers the complete setup of an on-premises domain controller running W
 
 ### Step 5: Verify DNS
 1. Open **Server Manager > Tools > DNS**
-2. Verify **Forward Lookup Zones** contains `NSA.local`
+2. Verify **Forward Lookup Zones** contains `NSA.local`  
    ![Forward Lookup Zones](images/14.png)  
 3. Create a **Reverse Lookup Zone** for `192.168.100.x`
-   - **Right-Click** Reverse Lookup Zone > New Zone
+   - **Right-Click** Reverse Lookup Zone > New Zone  
      ![Reverse Lookup Click](images/15.png)  
    - **Choose** Primary Zone, Check "`Store the zone in...`" and Click **Next**
    - Click **Next**
    - IPv4 Reverse Lookup Zone and Click **Next**
    - Network ID: Enter `192.168.100.x` and Click **Next**
-   - **Choose** Allow only secure dynamic updates(recomended for Active Directory) and click **Next**
+   - **Choose** Allow only secure dynamic updates(recomended for Active Directory) and click **Next**  
      ![Reverse Lookup](images/16.png)  
    - Click **Finish**
 4. Add a PTR(Pointer Record) in Reverse Lookup Zone for `192.168.100.x`
-   - **Right-Click** the Reverse Lookup Zone > New Pointer(PTR)
+   - **Right-Click** the Reverse Lookup Zone > New Pointer(PTR)  
      ![Add PTR](images/17.png)  
-   - Enter `192.168.100.2` for Host IP Address and click **OK**
+   - Enter `192.168.100.2` for Host IP Address and click **OK**  
      ![Host IP Address](images/18.png)  
 5. (Optional) Verify DNS
-   - Start > type `cmd`, press Enter, then type `nslookup` and hit Enter
+   - Start > type `cmd`, press Enter, then type `nslookup` and hit Enter  
      ![Host IP Address](images/19.png)  
 
 ### Step 6: Install DHCP Role
 1. Click **Start > Server Manager**
-2. Click **Manage > Add Roles and Features**
+2. Click **Manage > Add Roles and Features**  
    ![Add Roles and Features](images/6.png)  
 3. (Before You Begin) Click **Next**
 4. (Installation Type) Select **Role-based or feature-based installation** and click **Next**
 5. (Server Selection) Choose the local server(DC-01) and click **Next**
-6. (Server Roles) Select **DHCP Server** and click **Next**
+6. (Server Roles) Select **DHCP Server** and click **Next**  
    ![Add Roles and Features](images/20.png)  
 7. (Features) Click **Next**
 8. (DHCP Server) Click **Next**
-9. (Confirmation) Click **Install**, close once complete
+9. (Confirmation) Click **Install**, close once complete  
     ![Add Roles and Features](images/21.png)  
 
 ### Step 7: Authorize Server
-1. In Server Manager, click the yellow flag > **Complete DHCP Configuration**
+1. In Server Manager, click the yellow flag > **Complete DHCP Configuration**  
    ![DHCP Configuration](images/22.png)  
 2. (Description) Click **Next**
-3. (Authorization) Leave default and click **Commit**
+3. (Authorization) Leave default and click **Commit**  
    ![DHCP Commit](images/23.png)  
 4. (Summary) Click **Close**
 
 ### Step 8: Configure DHCP Scope
 1. Go to **Server Manager > Tools > DHCP**
-2. Expand **Your Domain** > **IPv4** > right-click > **New Scope**
+2. Expand **Your Domain** > **IPv4** > right-click > **New Scope**  
    ![DHCP Scope](images/24.png)  
 3. **Next** > Name: `NSA-DHCP` click **Next**
 4. Set range:
