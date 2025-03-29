@@ -43,7 +43,6 @@ Before proceeding with the steps outlined in this SOP, ensure the following prer
 ## How to Use
 1. Follow the steps outlined in `domain_controller_setup.md`
 2. Use screenshots and logs as evidence for your setup
-3. Push updates and contributions via pull requests (group members)
 
 ## Authors
 - Aaron Queskekapow  
