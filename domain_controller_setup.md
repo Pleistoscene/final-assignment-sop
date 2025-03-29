@@ -124,7 +124,7 @@ This SOP covers the complete setup of an on-premises domain controller running W
 6. Continue through the wizard and click **Install** after prerequisites check
     - ![Domain Password](images/12.png)
 7. After promotion completes let it restart
-8. Check DNS:
+8. Once restarted, Check DNS:
 - Press `Win + R`, type `ncpa.cpl`, press **Enter**  
   ![DNS Check](images/26.png)  
 - Right-click your adapter > **Properties**  
