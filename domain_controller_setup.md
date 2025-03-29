@@ -125,12 +125,16 @@ This SOP covers the complete setup of an on-premises domain controller running W
     - ![Domain Password](images/12.png)
 7. After promotion completes let it restart
 8. Check DNS:
-- Press `Win + R`, type `ncpa.cpl`, press **Enter**
-- Right-click your adapter > **Properties**
+- Press `Win + R`, type `ncpa.cpl`, press **Enter**  
+  ![DNS Check](images/26.png)  
+- Right-click your adapter > **Properties**  
+  ![DNS Check](images/27.png)  
 - Select **Internet Protocol Version 4 (TCP/IPv4)** > **Properties**
+  ![DNS Check](images/28.png)  
 - Ensure **Preferred DNS server** is set to `192.168.100.2`  
-  - If not, change it  
-  - If correct, continue to the next step
+  - If not, change it
+    ![DNS Check](images/29.png)  
+  - If correct, continue to the next step  
 
 ### Step 5: Verify Domain and DNS
 1. Log in as `NSA\Administrator`
