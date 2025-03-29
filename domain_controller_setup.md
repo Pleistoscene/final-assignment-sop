@@ -124,7 +124,7 @@ This SOP covers the complete setup of an on-premises domain controller running W
 6. Continue through the wizard and click **Install** after prerequisites check
     - ![Domain Password](images/12.png)
 7. After promotion completes let it restart
-8. Check the DNS server setting on the network adapter:
+8. Check the DNS server setting on the network adapter:  
   - Click **Start**, type `cmd`, and press **Enter** to open Command Prompt  
   - Type `nslookup` and press **Enter**  
   – If the DNS server is not `192.168.100.2`, go back to Step 2: Configure Static IP Address and update the DNS to `192.168.100.2`  
