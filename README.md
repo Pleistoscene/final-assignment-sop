@@ -8,7 +8,6 @@ This project demonstrates how to:
 - Configure static IP and DNS
 - Install and promote the server to a Domain Controller
 - Set up DNS and DHCP services
-- Test the network setup with a client machine
 
 ## Prerequisites
 Before proceeding with the steps outlined in this SOP, ensure the following prerequisites are met:
