@@ -201,12 +201,12 @@ This SOP covers the complete setup of an on-premises domain controller running W
 8. Yes, activate the scope > **Finish**
 
 ## Summary and Conclusion
+This SOP walked through setting up an on-premises domain controller using Windows Server 2025 with a GUI on real hardware. We configured a static IP address, installed and promoted the server to a domain controller, and set up DNS and DHCP services. Testing confirmed that the domain, name resolution, and IP address assignment worked as expected.  
+
+With this setup complete, the network is ready for additional client computers and future infrastructure to join the domain `NSA.local`. This SOP can be reused and updated for future deployments or referenced when expanding the network.  
 
 ![Summary](images/dc-server.png)
-
-This SOP walked through setting up an on-premises domain controller using Windows Server 2025 with a GUI on real hardware. We configured a static IP address, installed and promoted the server to a domain controller, and set up DNS and DHCP services. Testing confirmed that the domain, name resolution, and IP address assignment worked as expected.
-
-With this setup complete, the network is ready for additional client computers and future infrastructure to join the domain `NSA.local`. This SOP can be reused and updated for future deployments or referenced when expanding the network.
-
-
-![Summary](images/lab-1.jpg) ![Summary](images/lab-2.jpg) ![Summary](images/lab-3.jpg) ![Summary](images/labtop-joined.png)
+![Summary](images/lab-1.jpg)
+![Summary](images/lab-2.jpg)
+![Summary](images/lab-3.jpg)
+![Summary](images/labtop-joined.png)
