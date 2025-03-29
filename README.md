@@ -43,6 +43,8 @@ Before proceeding with the steps outlined in this SOP, ensure the following prer
 ## How to Use
 1. Follow the steps outlined in `domain_controller_setup.md`
 2. Use screenshots and logs as evidence for your setup
+3. The domain name `NSA.local` is used as a default example in the guide.  
+   **Feel free to replace it with a domain name that suits your environment**, such as `yourcompany.local` or `mittlab.local`.
 
 ## Authors
 - Aaron Queskekapow  
