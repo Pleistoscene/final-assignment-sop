@@ -71,7 +71,7 @@ This SOP covers the complete setup of an on-premises domain controller running W
 ### Step 1: Initial Server Setup
 1. Power on the physical server with Windows Server 2025 installation media.
 2. Complete initial setup steps:
-   - Choose "Windows Server 2025 Standard (Desktop Experience)"
+   - Choose `Windows Server 2025 Standard (Desktop Experience)`
      ![Initial Setup](images/1.png)  
    - Set the Administrator password
      ![Initial Setup](images/2.png)  
