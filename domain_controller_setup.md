@@ -1,7 +1,7 @@
 # SOP: Setting Up an On-Premises Domain Controller  
 **College:** Manitoba Institute of Trades and Technology (MITT)  
 **Course:** Network and System Administration  
-**Version:** 1.1  
+**Version:** 1.4  
 **Written By:** Aaron Queskekapow, Ravneet Kaur, Harpreet Singh, Jaskirat Kaur Brar  
 **Date:** 03/27/2025  
 
@@ -24,6 +24,8 @@ This SOP has a revision history to keep track of any changes made over time. If 
 |---------|------------|----------------------------|---------------------|
 | 1.0     | 03/27/2025 | Initial release of the SOP | Aaron Queskekapow   |
 | 1.1     | 03/28/2025 | Grammar corrections. | Aaron Queskekapow   |
+| 1.2     | 03/28/2025 | Made changes network configuration. | Aaron Queskekapow |
+| 1.3     | 03/28/2025 | Made changes to step 4. | Ravneet Kaur |
 
 ### Accountability Matrix
 
@@ -122,6 +124,10 @@ This SOP covers the complete setup of an on-premises domain controller running W
 6. Continue through the wizard and click **Install** after prerequisites check
     - ![Domain Password](images/12.png)
 7. After promotion completes let it restart
+8. Check the DNS server setting on the network adapter:
+  - Click **Start**, type `cmd`, and press **Enter** to open Command Prompt
+  - Type `nslookup` and press **Enter**
+  – If the DNS server is not `192.168.100.2`, go back to Step 2: Configure Static IP Address and update the DNS to `192.168.100.2`
 
 ### Step 5: Verify Domain and DNS
 1. Log in as `NSA\Administrator`
@@ -159,7 +165,7 @@ This SOP covers the complete setup of an on-premises domain controller running W
    - ![Add Roles and Features](images/20.png)
 8. (Features) Click **Next**
 9. (DHCP Server) Click **Next**
-10. (Confirmation) Click **Install**, Close once comeplete
+10. (Confirmation) Click **Install**, close once complete
     - ![Add Roles and Features](images/21.png)
 
 ### Step 7: Authorize Server
