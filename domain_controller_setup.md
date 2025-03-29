@@ -51,10 +51,6 @@ This SOP is intended for IT administrators and technicians tasked with deploying
 
 This SOP covers the complete setup of an on-premises domain controller running Windows Server 2025 with a graphical interface. It includes configuring a static IP address, installing necessary roles and features (AD DS, DNS, DHCP), promoting the server to a domain controller and verifying proper operation of all services.
 
-## Responsibilities
-
-- **Group Members**: Collaboratively handle server installation, network configuration, documentation, testing, and submission. Roles may be shared or rotated.
-
 ## Network Configuration
 
 | Component          | IP Address Range            | Description                          |
