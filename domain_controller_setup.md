@@ -56,7 +56,7 @@ This SOP covers the complete setup of an on-premises domain controller running W
 | Component          | IP Address Range            | Description                          |
 |--------------------|-----------------------------|--------------------------------------|
 | **Domain Name**    | NSA.local                   | Active Directory domain name         |
-| **Network Address**| 192.168.100.1/24              | NAT-based local network              |
+| **Network Address**| 192.168.100.0/24              | NAT-based local network              |
 | **DC-01**          | 192.168.100.2/24              | Domain Controller and DNS server     |
 | **DNS Server**     | 192.168.100.2                 | Self-assigned DNS                    |
 | **Reserved Range**  | 192.168.100.3 – 192.168.100.20       | Reserved for future static servers    |
