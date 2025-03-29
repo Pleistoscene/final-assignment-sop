@@ -157,7 +157,7 @@ This SOP covers the complete setup of an on-premises domain controller running W
    - ![Add PTR](images/17.png)
    - Enter `192.168.100.2` for Host IP Address and click **OK**
    - ![Host IP Address](images/18.png)
-5. (Optional) Verifiy DNS
+5. (Optional) Verify DNS
    - Start > type `cmd`, press Enter, then type `nslookup` and hit Enter
    - ![Host IP Address](images/19.png)
 
