@@ -81,7 +81,7 @@ This SOP covers the complete setup of an on-premises domain controller running W
    - Click on **Local Server** in the left-hand menu. 
    - Next to **Computer Name**, click the current name (e.g., `WIN-6OG0DUBK8TD`)
      ![Server Manager](images/3.png)  
-   - Click the **Change** button
+   - Click the **Change** button  
      ![Change Name](images/4.png)  
    - Enter the hostname `DC-01` and click **OK**
    - Restart the server when prompted to apply the change
