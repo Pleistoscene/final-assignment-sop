@@ -99,7 +99,7 @@ This SOP covers the complete setup of an on-premises domain controller running W
 
 ### Step 3: Install AD DS Role
 1. Click **Start > Server Manager**
-2. Click **Manage > Add Roles and Features**
+2. Click **Manage > Add Roles and Features**  
    ![Add Roles and Features](images/6.png)  
 3. (Before You Begin) Click **Next**
 4. (Installation Type) Select **Role-based or feature-based installation** and click **Next**
@@ -108,7 +108,7 @@ This SOP covers the complete setup of an on-premises domain controller running W
    ![AD DS](images/7.png)  
 7. (Features) click **Next**
 8. (AD DS) click **Next**
-9. (Confirmation) click **Install**
+9. (Confirmation) click **Install**  
    ![AD DS Install](images/8.png)  
 10. Wait for the install to complete and **Close**
 
