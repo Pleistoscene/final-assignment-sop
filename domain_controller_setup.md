@@ -26,6 +26,7 @@ This SOP has a revision history to keep track of any changes made over time. If 
 | 1.1     | 03/28/2025 | Grammar corrections. | Aaron Queskekapow   |
 | 1.2     | 03/28/2025 | Made changes network configuration. | Aaron Queskekapow |
 | 1.3     | 03/28/2025 | Made changes to step 4. | Ravneet Kaur |
+| 1.4     | 03/28/2025 | Added more images. | Aaron Queskekapow |
 
 ### Accountability Matrix
 
