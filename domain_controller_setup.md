@@ -207,6 +207,6 @@ This SOP walked through setting up an on-premises domain controller using Window
 
 With this setup complete, the network is ready for additional client computers and future infrastructure to join the domain `NSA.local`. This SOP can be reused and updated for future deployments or referenced when expanding the network.
 
-![Summary](images/lab-1.png)![Summary](images/lab-2.png)![Summary](images/lab-3.png)![Summary](images/labtop-joined.png)
+![Summary](images/lab-1.jpeg) ![Summary](images/lab-2.jpeg) ![Summary](images/lab-3.jpeg) ![Summary](images/labtop-joined.jpeg)
 
 
