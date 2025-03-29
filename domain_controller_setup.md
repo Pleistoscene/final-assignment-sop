@@ -72,24 +72,24 @@ This SOP covers the complete setup of an on-premises domain controller running W
 1. Power on the physical server with Windows Server 2025 installation media.
 2. Complete initial setup steps:
    - Choose "Windows Server 2025 Standard (Desktop Experience)"
-     ![Initial Setup](images/1.png)
+     ![Initial Setup](images/1.png)  
    - Set the Administrator password
-     ![Initial Setup](images/2.png)
+     ![Initial Setup](images/2.png)  
 3. Log in as Administrator.
 4. Rename the machine to `DC-01`:
    - Open **Server Manager**
    - Click on **Local Server** in the left-hand menu. 
    - Next to **Computer Name**, click the current name (e.g., `WIN-6OG0DUBK8TD`)
-   - ![Server Manager](images/3.png)
+     ![Server Manager](images/3.png)  
    - Click the **Change** button
-   - ![Change Name](images/4.png)
+     ![Change Name](images/4.png)  
    - Enter the hostname `DC-01` and click **OK**
    - Restart the server when prompted to apply the change
 
 ### Step 2: Configure Static IP Address
 1. Click **Start > Settings > Network & Internet > Ethernet**
 2. Select the connected network, scroll down to **IP assignment**, and click **Edit**
-   ![IP Edit](images/5.png)
+   ![IP Edit](images/5.png)  
 3. Change to **Manual**, enable **IPv4**, and enter:
    - IP Address: `192.168.100.2`
    - Subnet Mask: `255.255.255.0`
@@ -100,32 +100,32 @@ This SOP covers the complete setup of an on-premises domain controller running W
 ### Step 3: Install AD DS Role
 1. Click **Start > Server Manager**
 2. Click **Manage > Add Roles and Features**
-   - ![Add Roles and Features](images/6.png)
+   ![Add Roles and Features](images/6.png)  
 3. (Before You Begin) Click **Next**
 4. (Installation Type) Select **Role-based or feature-based installation** and click **Next**
 5. (Server Selection) Choose the local server(DC-01) and click **Next**
 6. (Server Roles) Check **Active Directory Domain Services** and click **Next**
-   - ![AD DS](images/7.png)
+   ![AD DS](images/7.png)  
 7. (Features) click **Next**
 8. (AD DS) click **Next**
 9. (Confirmation) click **Install**
-    - ![AD DS Install](images/8.png)
+   ![AD DS Install](images/8.png)  
 10. Wait for the install to complete and **Close**
 
 ### Step 4: Promote to Domain Controller
 1. In Server Manager, click the yellow flag > **Promote this server to a domain controller**
-   - ![Promote DC](images/9.png)
+   ![Promote DC](images/9.png)  
 2. (Deployment Configuration) Choose **Add a new forest**, enter `NSA.local` and click **Next**
-   - ![Add Forest](images/10.png)
+   ![Add Forest](images/10.png)  
 3. (Domain Controller Options) Enter DSRM (Directory Services Restore Mode) password and click **Next**
-   - ![Domain Password](images/11.png)
+   ![Domain Password](images/11.png)  
 4. (Deployment Configuration - DNS Options) Click **Next**
 5. (Additional Options) Leave the default NetBIOS name or customize if needed
 6. Continue through the wizard and click **Install** after prerequisites check  
-    - ![Domain Password](images/12.png)
+   ![Domain Password](images/12.png  
 7. After promotion completes let it restart
 8. Once restarted, Log in as `NSA\Administrator`
-   - ![Login](images/13.png)  
+   ![Login](images/13.png)  
 9. Check DNS:  
 - Press `Win + R`, type `ncpa.cpl`, press **Enter**  
   ![DNS Check](images/26.png)  
@@ -186,7 +186,7 @@ This SOP covers the complete setup of an on-premises domain controller running W
 ### Step 8: Configure DHCP Scope
 1. Go to **Server Manager > Tools > DHCP**
 2. Expand **Your Domain** > **IPv4** > right-click > **New Scope**
-   ![DHCP Scope](images/24.png)
+   ![DHCP Scope](images/24.png)  
 3. **Next** > Name: `NSA-DHCP` click **Next**
 4. Set range:
    - Start IP: `192.168.100.21`
