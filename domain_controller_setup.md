@@ -90,12 +90,12 @@ This SOP covers the complete setup of an on-premises domain controller running W
 1. Click **Start > Settings > Network & Internet > Ethernet**
 2. Select the connected network, scroll down to **IP assignment**, and click **Edit**
    ![IP Edit](images/5.png)
-4. Change to **Manual**, enable **IPv4**, and enter:
+3. Change to **Manual**, enable **IPv4**, and enter:
    - IP Address: `192.168.100.2`
    - Subnet Mask: `255.255.255.0`
    - Gateway: `192.168.100.1`
    - Preferred DNS: `192.168.100.2`
-5. Click **Save** and verify connectivity
+4. Click **Save** and verify connectivity
 
 ### Step 3: Install AD DS Role
 1. Click **Start > Server Manager**
@@ -121,10 +121,12 @@ This SOP covers the complete setup of an on-premises domain controller running W
    - ![Domain Password](images/11.png)
 4. (Deployment Configuration - DNS Options) Click **Next**
 5. (Additional Options) Leave the default NetBIOS name or customize if needed
-6. Continue through the wizard and click **Install** after prerequisites check
+6. Continue through the wizard and click **Install** after prerequisites check  
     - ![Domain Password](images/12.png)
 7. After promotion completes let it restart
-8. Once restarted, Check DNS:  
+8. Once restarted, Log in as `NSA\Administrator`
+   - ![Login](images/13.png)  
+9. Check DNS:  
 - Press `Win + R`, type `ncpa.cpl`, press **Enter**  
   ![DNS Check](images/26.png)  
 - Right-click your adapter > **Properties**  
@@ -136,13 +138,11 @@ This SOP covers the complete setup of an on-premises domain controller running W
   - If not, change it  
   - If correct, continue to the next step
 
-### Step 5: Verify Domain and DNS
-1. Log in as `NSA\Administrator`
-   - ![Login](images/13.png)
-2. Open **Server Manager > Tools > DNS**
-3. Verify **Forward Lookup Zones** contains `NSA.local`
+### Step 5: Verify DNS
+1. Open **Server Manager > Tools > DNS**
+2. Verify **Forward Lookup Zones** contains `NSA.local`
    - ![Forward Lookup Zones](images/14.png)
-4. Create a **Reverse Lookup Zone** for `192.168.100.x`
+3. Create a **Reverse Lookup Zone** for `192.168.100.x`
    - **Right-Click** Reverse Lookup Zone > New Zone
    - ![Reverse Lookup Click](images/15.png)
    - **Choose** Primary Zone, Check "`Store the zone in...`" and Click **Next**
@@ -152,12 +152,12 @@ This SOP covers the complete setup of an on-premises domain controller running W
    - **Choose** Allow only secure dynamic updates(recomended for Active Directory) and click **Next**
      ![Reverse Lookup](images/16.png)
    - Click **Finish**
-5. Add a PTR(Pointer Record) in Reverse Lookup Zone for `192.168.100.x`
+4. Add a PTR(Pointer Record) in Reverse Lookup Zone for `192.168.100.x`
    - **Right-Click** the Reverse Lookup Zone > New Pointer(PTR)
    - ![Add PTR](images/17.png)
    - Enter `192.168.100.2` for Host IP Address and click **OK**
    - ![Host IP Address](images/18.png)
-6. (Optional) Verifiy DNS
+5. (Optional) Verifiy DNS
    - Start > type `cmd`, press Enter, then type `nslookup` and hit Enter
    - ![Host IP Address](images/19.png)
 
@@ -178,26 +178,26 @@ This SOP covers the complete setup of an on-premises domain controller running W
 ### Step 7: Authorize Server
 1. In Server Manager, click the yellow flag > **Complete DHCP Configuration**
    - ![DHCP Configuration](images/22.png)
-3. (Description) Click **Next**
-4. (Authorization) Leave default and click **Commit**
+2. (Description) Click **Next**
+3. (Authorization) Leave default and click **Commit**
    - ![DHCP Commit](images/23.png)
-6. (Summary) Click **Close**
+4. (Summary) Click **Close**
 
 ### Step 8: Configure DHCP Scope
 1. Go to **Server Manager > Tools > DHCP**
 2. Expand **Your Domain** > **IPv4** > right-click > **New Scope**
    ![DHCP Scope](images/24.png)
-4. **Next** > Name: `NSA-DHCP` click **Next**
-5. Set range:
+3. **Next** > Name: `NSA-DHCP` click **Next**
+4. Set range:
    - Start IP: `192.168.100.21`
    - End IP: `192.168.100.200`
-6. Lease duration: default or adjusted as needed
-7. DHCP options:
+5. Lease duration: default or adjusted as needed
+6. DHCP options:
    - Default Router Gateway: `192.168.100.1`
    - DNS Server: `192.168.100.2`
    - Domain Name: `NSA.local`
-8. Skip WINS Server
-9. Yes, activate the scope > **Finish**
+7. Skip WINS Server
+8. Yes, activate the scope > **Finish**
 
 ## Summary and Conclusion
 
