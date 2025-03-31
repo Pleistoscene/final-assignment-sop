@@ -108,6 +108,10 @@ This SOP covers the complete setup of an on-premises domain controller running W
 9. (Confirmation) click **Install**  
    ![AD DS Install](images/8.png)  
 10. Wait for the install to complete and **Close**
+> **Troubleshooting Tip:**  
+> If the **AD DS prerequisites check fails** in this next step, make sure:
+> - The **network settings** (IP address, subnet mask, gateway, and DNS) are configured correctly.  
+> - The machine is **physically connected**.
 
 ### Step 4: Promote to Domain Controller
 1. In Server Manager, click the yellow flag > **Promote this server to a domain controller**
