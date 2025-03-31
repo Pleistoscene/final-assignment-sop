@@ -46,8 +46,8 @@ Before proceeding with the steps outlined in this SOP, ensure the following prer
 3. The domain name `NSA.local` is used as a default example in the guide.  
    **Feel free to replace it with a domain name that suits your environment**, such as `yourcompany.local` or `mittlab.local`.
 
-## Authors
+## Authors  
 - Aaron Queskekapow  
-- Ravneet Kaur
-- Jaskirat Kaur Brar
-- Harpreet Singh
+- Ravneet Kaur  
+- Jaskirat Kaur Brar  
+- Harpreet Singh  
