@@ -112,7 +112,7 @@ This SOP covers the complete setup of an on-premises domain controller running W
 9. (Confirmation) click **Install**  
    ![AD DS Install](images/8.png)
 > **Troubleshooting Tip:**  
-> If the **AD DS prerequisites check fails** in this next step, make sure:
+> If the **AD DS prerequisites check fails**, make sure:
 > - The **network settings** (IP address, subnet mask, gateway, and DNS) are configured correctly.  
 > - The machine is **physically connected**.
 11. Wait for the install to complete and **Close**
