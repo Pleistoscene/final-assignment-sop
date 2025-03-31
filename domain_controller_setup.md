@@ -20,17 +20,17 @@ This SOP has a revision history to keep track of any changes made over time. If 
 
 ### Revision History
 
-| Version | Date       | Description                | Author              |
-|---------|------------|----------------------------|---------------------|
-| 1.0     | 03/27/2025 | Initial release of the SOP | Aaron Queskekapow   |
-| 1.1     | 03/28/2025 | Grammar corrections. | Aaron Queskekapow   |
-| 1.2     | 03/28/2025 | Made changes network configuration. | Aaron Queskekapow |
-| 1.3     | 03/28/2025 | Made changes to step 4. | Ravneet Kaur |
-| 1.4     | 03/28/2025 | Added more images. | Aaron Queskekapow |
-| 1.5     | 03/30/2025 | Grammar check.     | Jaskirat Kaur Brar |
-| 1.6     | 03/30/2025 | Worked on Step 5.  | Harpreet Singh     |
-| 1.7     | 03/31/2025 | Added more images. | Ravneet Kaur       |
-| 1.8     | 03/31/2025 | Worked on summary and conclusion | Ravneet Kaur |
+| Version | Date       | Description                         | Author             |
+|---------|------------|-------------------------------------|--------------------|
+| 1.0     | 03/27/2025 | Initial release of the SOP          | Aaron Queskekapow  |
+| 1.1     | 03/28/2025 | Grammar corrections.                | Aaron Queskekapow  |
+| 1.2     | 03/28/2025 | Made changes network configuration. | Aaron Queskekapow  |
+| 1.3     | 03/28/2025 | Made changes to step 4.             | Ravneet Kaur       |
+| 1.4     | 03/28/2025 | Added more images.                  | Aaron Queskekapow  |
+| 1.5     | 03/30/2025 | Grammar check.                      | Jaskirat Kaur Brar |
+| 1.6     | 03/30/2025 | Worked on Step 5.                   | Harpreet Singh     |
+| 1.7     | 03/31/2025 | Added more images.                  | Ravneet Kaur       |
+| 1.8     | 03/31/2025 | Worked on summary and conclusion    | Ravneet Kaur       |
 
 ### Accountability Matrix
 
