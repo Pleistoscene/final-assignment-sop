@@ -1,7 +1,7 @@
 # SOP: Setting Up an On-Premises Domain Controller  
 **College:** Manitoba Institute of Trades and Technology (MITT)  
 **Course:** Network and System Administration  
-**Version:** 1.8
+**Version:** 1.8  
 **Written By:** Aaron Queskekapow, Ravneet Kaur, Harpreet Singh, Jaskirat Kaur Brar  
 **Date:** 03/27/2025  
 
