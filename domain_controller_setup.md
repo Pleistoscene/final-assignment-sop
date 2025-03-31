@@ -7,12 +7,12 @@
 
 ## Approval
 
-| Name              | Role     | Date Approved |
-|-------------------|----------|----------------|
-| Aaron Queskekapow | Lead / Document Owner | 03/27/2025     |
-| Ravneet Kaur | Co-Editor | 03/28/2025     |
-| Harpreet Singh | Visual Designer | 03/28/2025     |
-| Jaskirat Kaur Brar | Quality Assurance | 03/28/2025     |
+| Name               | Role                   | Date Approved |
+|--------------------|------------------------|----------------|
+| Aaron Queskekapow  | Lead / Document Owner  | 03/31/2025     |
+| Ravneet Kaur       | Co-Editor              | 03/31/2025     |
+| Harpreet Singh     | Visual Designer        | 03/31/2025     |
+| Jaskirat Kaur Brar | Quality Assurance      | 03/31/2025     |
 
 ## Revision
 
